@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dancing Script', cursive;
+    background: #02010a;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+.contenido {
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.p20 {
+    padding: 20px;
+}
+
+.left {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.right {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.col-1-2 {
+    width: 50%;
+}
+
+.col-1-4 {
+    width: 25%;
+}
+
+.tcenter {
+    text-align: center;
+}
+
+header {
+    background: #5b7989;
+    color: #FFF;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+header a {
+    color: #FFF;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+}
+
+header a.active {
+    text-decoration: none;
+}
+
+h1 {
+    text-shadow: 2px 2px #02010a;
+}
+
+.image {
+    box-shadow: 2px 2px #02010a;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#main-image {
+    background: #82c3a6;
+}
+
+#secondary-images {
+    background: #d5c75f;
+    border: 1px;
+}
+
+article h2 {
+    font-size: 22px;
+    padding: 10px;
+}
+
+article a {
+    color: #000;
+}
+
+article a img {
+    transition: all 0.5s;
+}
+
+article a[href="paisajes.html"]:hover img {
+    transform: rotate(10deg);
+}
+
+article a[href="retratos.html"]:hover img {
+    transform: translate(20px, -5px);
+}
+
+footer {
+    background: #C6d5c5;
+    color: #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+footer a {
+    color: #000;
+    text-decoration: none;
+}
+
+footer h3 {
+    font-size: 20px
+}
+
+footer ul li {
+    display: block;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    color: #FFF;
+    background: #000;
+    text-align: center;
+    padding-top: 3px;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 900px) {
+    .center-m {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .col-1-1-m {
+        width: 100%;
+    }
+    
+    .tcenter-m {
+        text-align: center;
+    }
+    
+    .pt0-m {
+        padding-top: 0;
+    }
+}
